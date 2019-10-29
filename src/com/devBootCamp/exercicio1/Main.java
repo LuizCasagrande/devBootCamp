@@ -18,6 +18,7 @@ public class Main {
         Telefone telefone = new Telefone();
         telefone.setNumero("99881234");
         telefone.setTipo(TipoTelefone.CELULAR);
+        pessoa.getTelefones().add(telefone);
 
         pessoa.populaDados();
     }

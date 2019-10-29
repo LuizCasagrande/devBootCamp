@@ -5,6 +5,8 @@ public enum TipoTelefone {
     RESIDENCIAL ("Telefone Residencial"),
     CELULAR ("Telefone Cecular");
 
+
+
     private String label;
 
     TipoTelefone(String label){

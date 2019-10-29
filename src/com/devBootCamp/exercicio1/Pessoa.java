@@ -61,6 +61,14 @@ public class Pessoa {
         this.enderecos = enderecos;
     }
 
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(List<Telefone> telefones) {
+        this.telefones = telefones;
+    }
+
     public void populaDados() {
 
         System.out.println("Nome: " + nome);
@@ -71,12 +79,12 @@ public class Pessoa {
 
         for (Telefone t : telefones) {
             System.out.println("Número de telefone: " + t.getNumero());
-            System.out.println("Tipo de telefone: "+ t.getTipo());
+            System.out.println("Tipo de telefone: " + t.getTipo());
         }
         for (Endereco e : enderecos) {
             System.out.println("Rua: " + e.getEndereco());
-            System.out.println("Número: "+ e.getNumero());
-            System.out.println("Bairro: "+ e.getBairro());
+            System.out.println("Número: " + e.getNumero());
+            System.out.println("Bairro: " + e.getBairro());
         }
     }
 }
