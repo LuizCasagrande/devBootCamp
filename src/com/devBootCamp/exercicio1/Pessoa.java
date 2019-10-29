@@ -11,6 +11,7 @@ public class Pessoa {
     private String email;
     private LocalDate nascimento;
     private List<Endereco> enderecos = new ArrayList<>();
+    private List<Telefone> telefones = new ArrayList<>();
 
     public String getNome() {
         return nome;
@@ -61,24 +62,21 @@ public class Pessoa {
     }
 
     public void populaDados() {
+
+        System.out.println("Nome: " + nome);
+        System.out.println("Sobrenome: " + sobrenome);
+        System.out.println("Cpf: " + cpf);
+        System.out.println("E-Mail: " + email);
+        System.out.println("Data de nascimento: " + nascimento);
+
+        for (Telefone t : telefones) {
+            System.out.println("Número de telefone: " + t.getNumero());
+            System.out.println("Tipo de telefone: "+ t.getTipo());
+        }
         for (Endereco e : enderecos) {
             System.out.println("Rua: " + e.getEndereco());
-            System.out.println("Número"+ e.getNumero());
-            System.out.println("Bairro"+ e.getBairro());
+            System.out.println("Número: "+ e.getNumero());
+            System.out.println("Bairro: "+ e.getBairro());
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

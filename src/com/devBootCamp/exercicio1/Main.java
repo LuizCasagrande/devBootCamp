@@ -15,12 +15,10 @@ public class Main {
         pessoa.setNascimento(localDate);
         Endereco endereco = new Endereco("Av Tupi", 4321, "Centro");
         pessoa.getEnderecos().add(endereco);
+        Telefone telefone = new Telefone();
+        telefone.setNumero("99881234");
+        telefone.setTipo(TipoTelefone.CELULAR);
 
-        System.out.println("Nome: " + pessoa.getNome());
-        System.out.println("Sobrenome: " + pessoa.getSobrenome());
-        System.out.println("Cpf: " + pessoa.getCpf());
-        System.out.println("Email: " + pessoa.getEmail());
-        System.out.println("Data de nascimento: " + pessoa.getNascimento());
-        System.out.println("Endereço: " + pessoa.getEnderecos());
+        pessoa.populaDados();
     }
 }
