@@ -6,7 +6,6 @@ public class Produto {
     private Double quantidade;
     private Double valorunitario;
 
-
     public Produto(Long id, String descricao, Double quantidade, Double valorunitario) {
         this.id = id;
         this.descricao = descricao;
