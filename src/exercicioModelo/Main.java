@@ -30,6 +30,5 @@ public class Main {
         nota1.getNotaitens().add(notaitem);
 
         nota1.populaDados();
-
     }
 }
