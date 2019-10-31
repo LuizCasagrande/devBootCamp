@@ -24,6 +24,7 @@ public class ContaCorrente extends ContaBancaria {
     @Override
     protected void depositar(Double valor) {
         if (valor > 0) {
+            valor = valor - taxaDeOperacao;
             saldo = saldo + valor;
             System.out.println("O valor depositado foi de: " + valor);
             System.out.println("O saldo atual é de: " + saldo);

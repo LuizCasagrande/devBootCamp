@@ -12,6 +12,6 @@ public class Main {
 
         System.out.println("Conta corrente: ");
         contaCorrente.sacar(120D);
-        contaCorrente.depositar(-100D);
+        contaCorrente.depositar(100D);
     }
 }
