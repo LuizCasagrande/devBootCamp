@@ -39,7 +39,7 @@ public class Voo {
 
     public void primeirolivre() {
         if (!assentoslivres.isEmpty()) {
-            System.out.println(assentoslivres.get(0));
+            System.out.println("Primeiro assento livre: "+ assentoslivres.get(0));
         } else System.out.println("Nao tem mais assentos livres");
     }
 
@@ -47,7 +47,7 @@ public class Voo {
 
         for (Integer proximoassento : assentoslivres) {
             if (proximoassento > assento) {
-                System.out.println(proximoassento);
+                System.out.println("Proximo livre: "+ proximoassento);
                 return;
             }
         }
@@ -81,7 +81,7 @@ public class Voo {
     }
 
     public void vagas() {
-        System.out.println(assentoslivres.size());
+        System.out.println("Vagas: "+ assentoslivres.size());
     }
 
 }

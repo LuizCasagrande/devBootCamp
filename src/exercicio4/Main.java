@@ -7,9 +7,12 @@ public class Main {
         Voo voo1 = new Voo(1,LocalDateTime.now(), 10 );
         System.out.println(voo1.getData());
         voo1.assentoslivres();
+        voo1.verifica(4);
         voo1.ocupa(4);
         voo1.assentoslivres();
         voo1.ocupa(4);
+        voo1.primeirolivre();
+        voo1.proximolivre(5);
         voo1.vagas();
 
     }
