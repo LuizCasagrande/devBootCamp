@@ -1,6 +1,5 @@
 package exercicio8;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FiguraGeometrica {
