@@ -10,6 +10,7 @@ public class Circulo implements Figura {
 
     @Override
     public double getArea() {
-        return 3.14 * (raio * raio);
+        return Math.PI * (raio * raio);
+
     }
 }

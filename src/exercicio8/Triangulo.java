@@ -12,7 +12,7 @@ public class Triangulo implements Figura {
 
     @Override
     public double getArea() {
-        return base * (altura / 2);
+        return (base * altura) / 2;
 
     }
 }
