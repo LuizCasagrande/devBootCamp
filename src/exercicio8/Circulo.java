@@ -9,8 +9,13 @@ public class Circulo implements Figura {
     }
 
     @Override
-    public double getArea() {
+    public Double getArea() {
         return Math.PI * (raio * raio);
 
+    }
+
+    @Override
+    public String getNome() {
+        return ("Círculo");
     }
 }

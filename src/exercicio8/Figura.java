@@ -1,5 +1,6 @@
 package exercicio8;
 
 public interface Figura {
-    public double getArea();
+    public Double getArea();
+    public String getNome();
 }

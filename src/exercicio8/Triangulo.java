@@ -4,6 +4,7 @@ public class Triangulo implements Figura {
 
     private Double base;
     private Double altura;
+    private String nome;
 
     public Triangulo(Double base, Double altura) {
         this.base = base;
@@ -11,8 +12,13 @@ public class Triangulo implements Figura {
     }
 
     @Override
-    public double getArea() {
+    public Double getArea() {
         return (base * altura) / 2;
 
+    }
+
+    @Override
+    public String getNome() {
+        return ("Triângulo");
     }
 }

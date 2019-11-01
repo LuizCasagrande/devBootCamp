@@ -11,8 +11,13 @@ public class Retangulo implements Figura {
     }
 
     @Override
-    public double getArea() {
+    public Double getArea() {
         return base * altura;
 
+    }
+
+    @Override
+    public String getNome() {
+        return ("Retângulo");
     }
 }

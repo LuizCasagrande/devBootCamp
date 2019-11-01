@@ -10,11 +10,12 @@ public class Main {
         Figura figura3 = new Triangulo(16D, 22D);
         Figura figura4 = new Circulo(10D);
 
-        System.out.println("Calculadora de Área: ");
-        System.out.println("Área: " + figura.getArea());
-        System.out.println("Área 2: " + figura2.getArea());
-        System.out.println("Área 3: " + figura3.getArea());
-        System.out.println("Área 4: " + figura4.getArea());
+        List<Figura> figuras = List.of(figura, figura2, figura3, figura4);
+
+        FiguraGeometrica figurageometrica = new FiguraGeometrica();
+        figurageometrica.mostar(figuras);
+
+
 
     }
 }

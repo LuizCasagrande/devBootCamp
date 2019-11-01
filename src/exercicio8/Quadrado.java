@@ -9,8 +9,13 @@ public class Quadrado implements Figura {
     }
 
     @Override
-    public double getArea() {
+    public Double getArea() {
         return lado * lado;
 
+    }
+
+    @Override
+    public String getNome() {
+        return ("Quadrado");
     }
 }
