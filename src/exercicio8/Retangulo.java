@@ -19,5 +19,6 @@ public class Retangulo implements Figura {
     @Override
     public String getNome() {
         return ("Retângulo");
+
     }
 }

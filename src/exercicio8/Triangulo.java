@@ -20,5 +20,6 @@ public class Triangulo implements Figura {
     @Override
     public String getNome() {
         return ("Triângulo");
+
     }
 }

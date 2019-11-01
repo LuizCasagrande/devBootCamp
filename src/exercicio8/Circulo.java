@@ -17,5 +17,6 @@ public class Circulo implements Figura {
     @Override
     public String getNome() {
         return ("Círculo");
+
     }
 }

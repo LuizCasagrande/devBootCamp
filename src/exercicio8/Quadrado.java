@@ -17,5 +17,6 @@ public class Quadrado implements Figura {
     @Override
     public String getNome() {
         return ("Quadrado");
+
     }
 }
