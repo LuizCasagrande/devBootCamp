@@ -15,7 +15,5 @@ public class Main {
         FiguraGeometrica figurageometrica = new FiguraGeometrica();
         figurageometrica.mostar(figuras);
 
-
-
     }
 }
