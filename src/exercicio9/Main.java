@@ -17,7 +17,7 @@ public class Main {
         animais.add(new Lambari());
         animais.add(new Lambari());
 
-        var contabilizar = (new ContabilizarEspecies());
+        var contabiliza = (new ContabilizarEspecies());
 
     }
 }
