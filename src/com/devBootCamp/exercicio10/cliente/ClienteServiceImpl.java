@@ -11,19 +11,16 @@ public class ClienteServiceImpl extends CrudServiceImpl<Cliente> implements Clie
 
     @Override
     protected void preSave(Cliente entity) {
-        if (entity.getCpf() == null) {
-            throw new RuntimeException("CPF Invalido: " + entity.getNome());
-        }
-
-        if (entity.getEmail() == null) {
-            throw new RuntimeException("Email nao informado: " + entity.getNome());
+        if (entity.getNome() == null) {
+            throw new RuntimeException("Nome Invalido");
         }
     }
+
 
     @Override
     protected void postSave(Cliente entity) {
         Email email = new Email();
-        email.setDe("emresa@fdasicjdsia.com");
+        email.setDe("cliente@gmail.com");
         email.setPara(entity.getEmail());
         emailService.enviarEmail(email);
     }

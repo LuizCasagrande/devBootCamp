@@ -4,6 +4,8 @@ public class Email {
 
     private String de;
     private String para;
+    private String titulo;
+    private String conteudo;
 
     public String getDe() {
         return de;
@@ -21,4 +23,19 @@ public class Email {
         this.para = para;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getConteudo() {
+        return conteudo;
+    }
+
+    public void setConteudo(String conteudo) {
+        this.conteudo = conteudo;
+    }
 }

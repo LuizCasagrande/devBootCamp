@@ -9,6 +9,7 @@ public class Item extends BaseObject {
     private String descricao;
     private BigDecimal quantidade;
     private BigDecimal valorUnitario;
+    private boolean inativo;
 
     public String getDescricao() {
         return descricao;
