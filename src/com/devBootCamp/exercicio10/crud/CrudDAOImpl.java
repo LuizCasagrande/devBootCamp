@@ -1,7 +1,5 @@
 package com.devBootCamp.exercicio10.crud;
 
-//import com.devBootCamp.exercicio6.pessoa.Pessoa;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
