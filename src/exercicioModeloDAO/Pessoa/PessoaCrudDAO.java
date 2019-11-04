@@ -7,5 +7,6 @@ public interface PessoaCrudDAO {
     Pessoa save(Pessoa pessoa);
     List<Pessoa> findAll();
     void delete(Integer id);
+    Pessoa findById (Pessoa id);
 
 }

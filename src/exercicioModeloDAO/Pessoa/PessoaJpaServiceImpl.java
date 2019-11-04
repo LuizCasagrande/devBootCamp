@@ -22,4 +22,9 @@ public class PessoaJpaServiceImpl implements PessoaService {
     public void delete(Integer id) {
         pessoaCrudDAO.delete(id);
     }
+
+    @Override
+    public Pessoa FindById(Integer id) {
+        return null;
+    }
 }

@@ -23,4 +23,9 @@ public class PessoaConsoleDaoImpl implements PessoaCrudDAO {
     public void delete(Integer id) {
 
     }
+
+    @Override
+    public Pessoa findById(Pessoa id) {
+        return new Pessoa();
+    }
 }
