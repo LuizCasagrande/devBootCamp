@@ -10,6 +10,9 @@ import com.devBootCamp.exercicio10.pedido.PedidoServiceImpl;
 import com.devBootCamp.exercicio10.cliente.Cliente;
 import com.devBootCamp.exercicio10.cliente.ClienteService;
 import com.devBootCamp.exercicio10.cliente.ClienteServiceImpl;
+import com.devBootCamp.exercicio10.vendedor.Vendedor;
+import com.devBootCamp.exercicio10.vendedor.VendedorService;
+import com.devBootCamp.exercicio10.vendedor.VendedorServiceImpl;
 
 import java.math.BigDecimal;
 
@@ -18,6 +21,8 @@ public class Main {
     public static void main(String[] args) {
         PedidoService pedidoService = new PedidoServiceImpl();
         ClienteService clienteService = new ClienteServiceImpl();
+        VendedorService vendedorService = new VendedorServiceImpl();
+
 
         Cliente cliente = new Cliente();
         cliente.setCpf("123123123");
@@ -25,7 +30,13 @@ public class Main {
         cliente.setEmail("luiz@gmail.com");
         cliente = clienteService.save(cliente);
 
+        Vendedor vendedor = new Vendedor();
+        vendedor.setNome("Jao");
+        vendedor.setPercentualDeComissao(BigDecimal.valueOf(100));
+        vendedor.setPercentualDeDescontoMaximo(BigDecimal.valueOf(150));
+
         Integer idCliente = cliente.getId();
+        Integer idVendedor = vendedor.getId();
 
         ItemService itemService = new ItemServiceImpl();
 
