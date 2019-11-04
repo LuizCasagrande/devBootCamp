@@ -25,6 +25,6 @@ public class PessoaJpaServiceImpl implements PessoaService {
 
     @Override
     public Pessoa FindById(Integer id) {
-        return null;
+        return pessoaCrudDAO.findById(id);
     }
 }

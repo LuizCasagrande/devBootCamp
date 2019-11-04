@@ -29,7 +29,7 @@ public class PessoaJpaDAOImpl implements PessoaCrudDAO{
     }
 
     @Override
-    public Pessoa findById(Pessoa id) {
+    public Pessoa findById(Integer id) {
         for (Pessoa pessoa : pessoaList) {
             if (pessoa.getId().equals(id)) {
                 return pessoa;
@@ -42,6 +42,8 @@ public class PessoaJpaDAOImpl implements PessoaCrudDAO{
 //                - Filter(pessoa -> pessoa.getId().equals(id))
 //                - findAny()
 //                - orElse(new Pessoa());
+
+
 
     }
 }

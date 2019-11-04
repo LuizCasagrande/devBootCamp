@@ -25,7 +25,7 @@ public class PessoaConsoleDaoImpl implements PessoaCrudDAO {
     }
 
     @Override
-    public Pessoa findById(Pessoa id) {
+    public Pessoa findById(Integer id) {
         return new Pessoa();
     }
 }
