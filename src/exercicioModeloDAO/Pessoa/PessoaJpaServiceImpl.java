@@ -1,6 +1,5 @@
 package exercicioModeloDAO.Pessoa;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PessoaJpaServiceImpl implements PessoaService {
@@ -14,7 +13,7 @@ public class PessoaJpaServiceImpl implements PessoaService {
 
     @Override
     public List<Pessoa> findAll() {
-        System.out.println("");
+        System.out.println("Find All");
         return pessoaCrudDAO.findAll();
     }
 

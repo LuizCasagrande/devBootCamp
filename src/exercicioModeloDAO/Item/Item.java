@@ -1,4 +1,4 @@
-package exercicioModeloDAO;
+package exercicioModeloDAO.Item;
 
 import java.math.BigDecimal;
 
