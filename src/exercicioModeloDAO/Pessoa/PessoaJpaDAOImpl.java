@@ -14,5 +14,17 @@ public class PessoaJpaDAOImpl implements PessoaCrudDAO{
         pessoaList.add(pessoa);
         return pessoa;
     }
+
+    @Override
+    public List<Pessoa> findAll() {
+        System.out.println("");
+        return new ArrayList<>();
+    }
+
+    @Override
+    public void delete(Integer id) {
+        pessoaList.removeIf(pessoa -> pessoa.getId().equals(id));
+        System.out.println("Jpa delete");
+    }
 }
 

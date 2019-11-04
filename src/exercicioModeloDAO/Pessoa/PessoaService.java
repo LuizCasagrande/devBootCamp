@@ -2,7 +2,7 @@ package exercicioModeloDAO.Pessoa;
 
 import java.util.List;
 
-public interface PessoaCrudDAO {
+public interface PessoaService {
 
     Pessoa save(Pessoa pessoa);
     List<Pessoa> findAll();
